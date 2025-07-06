@@ -18,15 +18,15 @@
   </head>
 
 <body>
-<h3>１自由度粘弾性振動系</h3>
+<h3>１自由度粘弾性振動系(離散時間状態方程式による数値計算例)</h3>
 <p><a href="https://aoyamakohbo.github.io/VscElsVib1D/">１自由度粘弾性振動系</a>
 の振動(運動)方程式は次式となります。</p>
 \begin{align}
-\ddot x + 2\zeta \omega_n\dot x + \omega_n^2x = f,~~~y=x. \label{eq:VivEq}
+\ddot x + 2\zeta \omega_n\dot x + \omega_n^2x = \omega_n^2u,~~~y=x. \label{eq:VivEq}
 \end{align}
-<p>ここに、\(m\)は質量、\(\zeta\)は粘性係数、\(\omega_n^2\)は弾性係数です。</p>
-<p>１自由度粘弾性振動系\eqref{eq:VivEq}において、サンプリング周期\(T=0.005\)[s]、
-  \(\omega_n=6.28×10\)[rad/s]、\(\zeta=0.2\)
+<p>ここに、\(m\)は質量、\(\zeta\)は減衰係数、\(\omega_n\)は固有各振動数です。</p>
+<p><a href="https://aoyamakohbo.github.io/VscElsVib1D/">１自由度粘弾性振動系</a>\eqref{eq:VivEq}において、サンプリング周期\(T=0.005\)[s]、
+  \(\omega_n=6.28\times 10\)[rad/s]、\(\zeta=0.2\)
   の離散時間状態方程式は次式で記述されます。</p>
  \begin{align}
 \left[
